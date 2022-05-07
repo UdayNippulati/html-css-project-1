@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+    <style>
+        body{ 
+                 background-image: url('/Images/bg1.jpg');
+                 background-size: 100%;
+                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+        .left{
+            display: inline-block;
+            border: 2px solid black;
+            position: absolute;
+            left : 5px;
+            top : 30px;
+        }
+        .mid{
+            display: block;
+            width: 45%;
+            margin: 30px auto;
+            //border: 2px solid black;
+            text-align: center;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right:5px;
+            top : 30px;
+            border: 2px solid black;
+        }
+
+        .mid .navBar ul{
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+        }
+
+        .mid .navBar li{
+            display: inline-block;
+            padding: 0px 36px;
+            margin: 0px 30px;
+        }
+
+        .mid .navBar li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .mid .navBar li a:hover{
+            color: purple;
+            font-weight: bolder;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            this is left
+        </div>
+        <div class="mid">
+            <nav class="navBar">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            this is right
+        </div>
+    </header>
+
+</body>
+</html>
