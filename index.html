@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <style>
         body{ 
                  background-image: url('/Images/bg1.jpg');
                  background-size: 100%;
-                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                 font-family: 'Inter', sans-serif;
+                 background-repeat: no-repeat;
             }
+
+        header{
+            font-size: 39px;
+        }
 
         .left{
             display: inline-block;
@@ -18,12 +26,17 @@
             position: absolute;
             left : 5px;
             top : 30px;
+            font-size: 10px;
+        }
+
+        .left img{
+            width: 97px;
         }
         .mid{
             display: block;
             width: 45%;
             margin: 30px auto;
-            //border: 2px solid black;
+            border: 2px solid black;
             text-align: center;
         }
         .right{
@@ -42,8 +55,8 @@
 
         .mid .navBar li{
             display: inline-block;
-            padding: 0px 36px;
-            margin: 0px 30px;
+            padding: 0px 12px;
+            margin: 0px 0px;
         }
 
         .mid .navBar li a{
@@ -54,19 +67,20 @@
         .mid .navBar li a:hover{
             color: purple;
             font-weight: bolder;
-            font-size: medium;
+            font-size: 39px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="left">
-            this is left
+            <img src="/Images/gym logo.jpg" alt="logo">
+            <p>Uday's Fitness Gym</p>
         </div>
         <div class="mid">
             <nav class="navBar">
                 <ul>
-                    <li> <a href="#">Home</a></li>
+                    <li id="active"> <a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
